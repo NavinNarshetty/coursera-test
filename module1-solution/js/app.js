@@ -12,18 +12,18 @@
 
       if ($scope.foodItems === "") {
         $scope.message = "Please enter data first.";
-        $scope.noticeType = "danger";
+        $scope.noticeType = "red";
       }
       else {
         var $foodItemsArray = $scope.foodItems.split(",");
         var $length = $foodItemsArray.length;
         if ( ($length <= 3) || ($length == 4 && $foodItemsArray[3].trim() === "") ) {
           $scope.message = "Enjoy!";
-          $scope.noticeType = "success";
+          $scope.noticeType = "green";
         }
         else {
           $scope.message = "Too much!";
-          $scope.noticeType = "warning";
+          $scope.noticeType = "orange";
         }
       }
     };
