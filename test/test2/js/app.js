@@ -3,7 +3,7 @@
 
   angular.module('ShoppingListCheckOff' ,[])
   .controller('ToBuyShoppingController ',ToBuyShoppingController )
-  .cotroller('AlreadyBoughtShoppingController',AlreadyBoughtShoppingController)
+  .controller('AlreadyBoughtShoppingController',AlreadyBoughtShoppingController)
   .service('ShoppingListCheckOffService',ShoppingListCheckOffService);
 
   ToBuyShoppingController.$inject =['ShoppingListCheckOffService'];
