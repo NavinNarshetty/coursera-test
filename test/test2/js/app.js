@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('ShoppingListCheckOff' ,[])
-  .controller('ToBuyShoppingController ',ToBuyShoppingController )
+  .controller('ToBuyShoppingController',ToBuyShoppingController)
   .controller('AlreadyBoughtShoppingController',AlreadyBoughtShoppingController)
   .service('ShoppingListCheckOffService',ShoppingListCheckOffService);
 
@@ -40,7 +40,7 @@
       return toBuyItems;
     };
 
-    servie.GetBoughtItems=function () {
+    service.GetBoughtItems=function () {
       return boughtItems;
     };
     service.buyItem =function (itemIndex) {
